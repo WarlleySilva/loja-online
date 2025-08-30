@@ -26,7 +26,7 @@ version: "3.8"
 
 services:
   frontend:
-    image: warlleysilva/loja-frontend:latest
+    image: warlleyss/loja-frontend:latest
     container_name: loja-frontend
     ports:
       - "3100:3100"
@@ -34,7 +34,7 @@ services:
       - backend
 
   backend:
-    image: warlleysilva/loja-backend:latest
+    image: warlleyss/loja-backend:latest
     container_name: loja-backend
     ports:
       - "4000:4000"
