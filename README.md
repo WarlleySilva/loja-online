@@ -42,7 +42,7 @@ services:
       DB_HOST: "SEU_IP_AQUI"        # ← IP do servidor onde roda o MySQL
       DB_USER: "loja"
       DB_PASS: "loja123"
-      DB_NAME: "loja_online
+      DB_NAME: "loja_online"
 ```
 ⚠️ Requisitos obrigatórios
 1. Banco de dados MySQL configurado
