@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./client
+    container_name: loja-frontend
+    ports:
+      - "3100:3100"
+    depends_on:
+      - backend
+    environment:
+      REACT_APP_API_URL: "http://zbx-poc-psql.duckdns.org:4000"
+
+  backend:
+    build:
+      context: ./server
+    container_name: loja-backend
+    ports:
+      -  "4000:4000"
+    environment:
+      DB_HOST: "10.0.0.59"   # <- IP do servidor B onde roda o MySQL
+      DB_USER: "loja"
+      DB_PASS: "loja123"
+      DB_NAME: "loja_online"
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Online</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #bbdefb); /* Azul claro */
+      color: #0d47a1; /* Azul escuro */
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: #0d47a1;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: #1565c0; /* Azul escuro */
+      color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-card h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.4rem;
+    }
+
+    .product-card p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #4fc3f7; /* Azul claro no preço */
+    }
+
+    .loader {
+      font-size: 1.2rem;
+      color: #0d47a1;
+      margin: 20px 0;
+    }
+
+    .error {
+      background: #c62828;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
